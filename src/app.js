@@ -24,7 +24,7 @@ import cryptoRouter from "./routes/crypto.routes.js";
 
 
 app.get("/", (req, res) => {
-    app.send("Welcome to KroinX-Crypto World");
+    res.send("Welcome to KroinX-Crypto World");
 });
 app.use("/api/v1/crypto", cryptoRouter);
 
